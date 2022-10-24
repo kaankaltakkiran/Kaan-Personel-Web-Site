@@ -1,5 +1,26 @@
+<!-- Ortak Headar İmport -->
+<%- include("partials/_header")%>
+<!-- Loader -->
+<div class="preloader">
+  <div class="loader_34">
+      <div class="ytp-spinner">
+          <div class="ytp-spinner-container">
+              <div class="ytp-spinner-rotator">
+                  <div class="ytp-spinner-left">
+                      <div class="ytp-spinner-circle"></div>
+                  </div>
+                  <div class="ytp-spinner-right">
+                      <div class="ytp-spinner-circle"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 <!--====== Favicon Icon ======-->
+
 <link rel="shortcut icon" href="/public/images/favicon.png" type="image/png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="/public/css/register.css">
   <div class="box"> 
   <form action="/register" method="POST">
@@ -11,52 +32,40 @@
     <i></i>
   </div>
   <!--  Hata Mesajlarının Gelceği Yer -->
-  <div class="col-md-12">
-    <div style="display: none; color: aqua;" class="alert alert-danger" id="name"></div>
- </div>
+    <div style="display: none;  margin-top: 5px;" class="alert alert-danger" id="name"></div>
   <div class="inputbox">
     <input type="text" required="required" name="surname">
     <span>SoyAd</span>
     <i></i>
   </div>
     <!--  Hata Mesajlarının Gelceği Yer -->
-    <div class="col-md-12">
-      <div style="display: none; color: aqua;" class="alert alert-danger" id="surname"></div>
-   </div>
+      <div style="display: none;  margin-top: 5px;" class="alert alert-danger" id="surname"></div>
   <div class="inputbox">
     <input type="email" required="required" name="email" >
     <span>Email </span>
     <i></i>
   </div>
   <!--  Hata Mesajlarının Gelceği Yer -->
-    <div class="col-md-12">
-   <div style="display: none; color: aqua;" class="alert alert-danger"  id="email"></div>
-  </div>
+   <div style="display: none;  margin-top: 5px;" class="alert alert-danger"  id="email"></div>
   <div class="inputbox">
       <input type="password" required="required" name="password" >
       <span>Şifre</span>
       <i></i>
     </div>
-      <!--  Hata Mesajlarının Gelceği Yer -->
-       <div class="col-md-12">
-        <div style="display: none; color: aqua;" class="alert alert-danger" id="password"></div>
-      </div>
+      <!--  Hata Mesajlarının Gelceği Yer -->  
+        <div style="display: none; margin-top: 5px;" class="alert alert-danger" id="password"></div> 
   <div class="inputbox">
     <input type="tel" required="required" maxlength="11" name="phonenumber">
     <span>Telefon Numarası</span>
     <i></i>
   </div>
     <!--  Hata Mesajlarının Gelceği Yer -->
-    <div class="col-md-12">
-      <div style="display: none; color: aqua;" class="alert alert-danger" id="phonenumber"></div>
-   </div>
+      <div style="display: none;  margin-top: 5px;" class="alert alert-danger" id="phonenumber"></div>
   <div class="inputbox">
-  <textarea name="adress" rows="5"  cols="45" placeholder="Adresinizi Giriniz" required></textarea>
+  <textarea name="adress" rows="5"  cols="36" placeholder="Adresinizi Giriniz" required></textarea>
 </div>
   <!--  Hata Mesajlarının Gelceği Yer -->
-  <div class="col-md-12">
-    <div style="display: none; color: aqua;" class="alert alert-danger" id="adress"></div>
- </div>
+    <div style="display: none;  margin-top: 5px;" class="alert alert-danger" id="adress"></div>
     <input type="submit" value="Üye Ol">
 </div>
 </div>
@@ -137,5 +146,14 @@
         console.log("ERR::", err)
      }
   })
+  
 </script>
 
+<!--====== jquery js ======-->
+<script src="/public/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="/public/js/vendor/jquery-1.12.4.min.js"></script>
+<!--====== Appear js ======-->
+<script src="/public/js/jquery.appear.min.js"></script>
+<!--====== Main js ======-->
+<script src="/public/js/main.js"></script>
+</body>

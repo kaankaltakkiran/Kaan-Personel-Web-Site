@@ -10,14 +10,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 130vh;
     background: #23242a;
     }
     .box{
 		margin-top: 60px;
         position: relative;
         width: 380px;
-        height: 820px;
+		min-height: 140vh;
         background: #1c1c1c;
         border-radius: 8px;
         overflow: hidden;
@@ -28,7 +28,7 @@ body{
         top: -50%;
         left:-50% ;
         width: 320px;
-        height: 420px;
+        min-height: 130vh;
         background:linear-gradient(0deg,transparent,#45f3ff,
         transparent,#45f3ff) ;
         transform-origin: bottom right;
@@ -40,7 +40,7 @@ body{
         top: -50%;
         left:-50% ;
         width: 320px;
-        height: 420px;
+		min-height: 130vh;
         background:linear-gradient(10deg,transparent,#45f3ff,
         transparent,#45f3ff) ;
         transform-origin: bottom right;
