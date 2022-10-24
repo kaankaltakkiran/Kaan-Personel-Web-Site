@@ -1,0 +1,141 @@
+<!--====== Favicon Icon ======-->
+<link rel="shortcut icon" href="/public/images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="/public/css/register.css">
+  <div class="box"> 
+  <form action="/register" method="POST">
+  <div class="form">
+  <h2>Üye Ol</h2>
+  <div class="inputbox">
+    <input type="text" required="required" name="name">
+    <span>İsim</span>
+    <i></i>
+  </div>
+  <!--  Hata Mesajlarının Gelceği Yer -->
+  <div class="col-md-12">
+    <div style="display: none; color: aqua;" class="alert alert-danger" id="name"></div>
+ </div>
+  <div class="inputbox">
+    <input type="text" required="required" name="surname">
+    <span>SoyAd</span>
+    <i></i>
+  </div>
+    <!--  Hata Mesajlarının Gelceği Yer -->
+    <div class="col-md-12">
+      <div style="display: none; color: aqua;" class="alert alert-danger" id="surname"></div>
+   </div>
+  <div class="inputbox">
+    <input type="email" required="required" name="email" >
+    <span>Email </span>
+    <i></i>
+  </div>
+  <!--  Hata Mesajlarının Gelceği Yer -->
+    <div class="col-md-12">
+   <div style="display: none; color: aqua;" class="alert alert-danger"  id="email"></div>
+  </div>
+  <div class="inputbox">
+      <input type="password" required="required" name="password" >
+      <span>Şifre</span>
+      <i></i>
+    </div>
+      <!--  Hata Mesajlarının Gelceği Yer -->
+       <div class="col-md-12">
+        <div style="display: none; color: aqua;" class="alert alert-danger" id="password"></div>
+      </div>
+  <div class="inputbox">
+    <input type="tel" required="required" maxlength="11" name="phonenumber">
+    <span>Telefon Numarası</span>
+    <i></i>
+  </div>
+    <!--  Hata Mesajlarının Gelceği Yer -->
+    <div class="col-md-12">
+      <div style="display: none; color: aqua;" class="alert alert-danger" id="phonenumber"></div>
+   </div>
+  <div class="inputbox">
+  <textarea name="adress" rows="5"  cols="45" placeholder="Adresinizi Giriniz" required></textarea>
+</div>
+  <!--  Hata Mesajlarının Gelceği Yer -->
+  <div class="col-md-12">
+    <div style="display: none; color: aqua;" class="alert alert-danger" id="adress"></div>
+ </div>
+    <input type="submit" value="Üye Ol">
+</div>
+</div>
+</form>
+<script>
+  //İdlere Göre İşlem
+  const form = document.querySelector('form')
+  const nameError = document.querySelector('#name')
+  const surnameError = document.querySelector('#surname')
+  const emailError = document.querySelector('#email')
+  const passwordError = document.querySelector('#password')
+  const phonenumberError = document.querySelector('#phonenumber')
+  const adressError = document.querySelector('#adress')
+    //Register Butonuna Tıklanınca
+  form.addEventListener("submit", async (e) => {
+     e.preventDefault();
+     nameError.textContent = "";
+     surnameError.textContent = "";
+     emailError.textContent = "";
+     passwordError.textContent = "";
+     phonenumberError.textContent = "";
+     adressError.textContent = "";
+
+     nameError.style.display = "none"
+     surnameError.style.display = "none"
+     emailError.style.display = "none"
+     passwordError.style.display = "none"
+     phonenumberError.style.display = "none"
+     adressError.style.display = "none"
+       //Değer Atama
+       const name = form.name.value
+       const surname = form.surname.value
+       const email = form.email.value
+       const password = form.password.value
+       const phonenumber = form.phonenumber.value
+       const adress = form.adress.value
+     try {
+        const res = await fetch('/register', {
+           method: "POST",
+           body: JSON.stringify({ name,surname,email, password, phonenumber,adress }),
+           headers: { "Content-Type": "application/json" }
+        })
+             //Data Geliyor
+        const data = await res.json();
+        
+         //Hata Yoksa Dönecek Hata Yazdırma Yeri
+        if (data) {
+          if (data.name) {
+            nameError.textContent = data.name
+            nameError.style.display = "block"
+           }
+          
+           if (data.username) {
+              usernameError.textContent = data.username
+              usernameError.style.display = "block"
+           }
+           if (data.email) {
+              emailError.textContent = data.email
+              emailError.style.display = "block"
+           }
+           if (data.password) {
+              passwordError.textContent = data.password
+              passwordError.style.display = "block"
+           }
+           if (data.phonenumber) {
+            phonenumberError.textContent = data.phonenumber
+            phonenumberError.style.display = "block"
+           }
+           if (data.adress) {
+            adressError.textContent = data.adress
+            adressError.style.display = "block"
+           }
+        }
+         if(data.user){
+          location.assign("/login")
+         }
+     } catch (err) {
+        console.log("ERR::", err)
+     }
+  })
+</script>
+

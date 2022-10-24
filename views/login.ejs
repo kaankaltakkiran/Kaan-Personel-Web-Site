@@ -1,0 +1,57 @@
+<!-- Ortak Headar İmport -->
+<%- include("partials/_header")%>
+<!-- Loader -->
+<div class="preloader">
+  <div class="loader_34">
+      <div class="ytp-spinner">
+          <div class="ytp-spinner-container">
+              <div class="ytp-spinner-rotator">
+                  <div class="ytp-spinner-left">
+                      <div class="ytp-spinner-circle"></div>
+                  </div>
+                  <div class="ytp-spinner-right">
+                      <div class="ytp-spinner-circle"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/public/css/login.css">
+    <div class="box"> 
+      <form action="/login" method="POST">
+    <div class="form">
+    <h2>Giriş Yap </h2>
+    <div class="inputbox">
+      <% if(emailPasswordError.length>0){%>
+      <div class="alert alert-danger" style="text-align:center ;" role="alert">
+        <%=emailPasswordError%>
+      </div> 
+      <% }%>
+      <input type="email" required="required" name="email" >
+      <span>Email </span>
+      <i></i>
+    </div>
+    <div class="inputbox">
+        <input type="password" required="required" name="password" >
+        <span>Şifre</span>
+        <i></i>
+      </div>
+      <div class="links">
+        <a href="">Şifremi Unuttum</a>
+        <a href="/register">Üye Ol</a> 
+      </div>
+      <input type="submit" value="Giriş Yap">
+</div>
+</div>
+</form>
+    <!--====== jquery js ======-->
+    <script src="/public/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="/public/js/vendor/jquery-1.12.4.min.js"></script>
+    <!--====== Appear js ======-->
+    <script src="/public/js/jquery.appear.min.js"></script>
+    <!--====== Main js ======-->
+    <script src="/public/js/main.js"></script>
+</body>
