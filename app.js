@@ -9,6 +9,8 @@ import pageRoute from "./routes/pageRoute.js";
 //Sayfa Yönlendirme İçin(Kullanıcı)
 import userRoute from "./routes/userRoute.js";
 
+import contactRoute from "./routes/contactRoute.js";
+
 import cookieParser from "cookie-parser";
 //JsonWebToken İçin
 import {checkUser} from "./middlewares/authMiddleware.js";
@@ -42,6 +44,7 @@ res.download("./public/Cv.pdf");
 app.use("*",checkUser);
 app.use("/",pageRoute);
 app.use("/",userRoute);
+app.use("/users",contactRoute);
 //Port Çalıştırma
 //``
 app.listen(port, () => {
