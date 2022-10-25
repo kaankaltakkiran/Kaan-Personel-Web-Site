@@ -44,6 +44,7 @@ res.download("./public/Cv.pdf");
 app.use("*",checkUser);
 app.use("/",pageRoute);
 app.use("/",userRoute);
+//İndex.js den action /users isteği gelirse contactRoute a git
 app.use("/users",contactRoute);
 //Port Çalıştırma
 //``

@@ -1,6 +1,8 @@
-//UserModel İmport
+//ContactUser İmport
 import ContactUser from "../models/contactModel.js";
+//Mail Gönderimi İçin İmport
 import nodemailer from "nodemailer";
+//createContactUser isteği gelince çalış
 const createContactUser= async(req,res)=>{
     const htmlTemplate=`
     <!doctype html>
@@ -161,6 +163,7 @@ const createContactUser= async(req,res)=>{
     try{
         const contactUser=ContactUser.create(req.body);
       /*  res.redirect('/'); */
+      //İşlem Sonrası İndex sayfasına git
        res.render('index');
     }catch(error){
         res.status(500).json({
@@ -169,9 +172,5 @@ const createContactUser= async(req,res)=>{
         });
     }
 }
-
-
-
-
 
 export {createContactUser};
