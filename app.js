@@ -23,7 +23,7 @@ conn();
 //Sunucu İçin 
 new Darkmode().showWidget();
 const app=express();
-const port=process.env.PORT||3000;
+const port=process.env.PORT;
 //Html De JavaScript Kodu Yazmak İçin Ejs
 app.set('view engine','ejs');
 //Static Dosyalara Ulaşmak İçin
