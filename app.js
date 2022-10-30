@@ -20,8 +20,6 @@ import flush from'connect-flash';
 dotenv.config();
 //Veritabanı Bağlantısı için
 conn(); 
-//Sunucu İçin 
-new Darkmode().showWidget();
 const app=express();
 const port=process.env.PORT;
 //Html De JavaScript Kodu Yazmak İçin Ejs
@@ -49,6 +47,6 @@ app.use("/",userRoute);
 app.use("/users",contactRoute);
 //Port Çalıştırma
 //``
-app.listen(port, () => {
+app.listen(port||3000, () => {
     console.log(`Server Şu Portta Çalışıyor: ${port}`);
  });
