@@ -8,9 +8,9 @@ import conn from "./db.js";
 import pageRoute from "./routes/pageRoute.js";
 //Sayfa Yönlendirme İçin(Kullanıcı)
 import userRoute from "./routes/userRoute.js";
-
+//Sayfa Yönlendirme İçin(contact)
 import contactRoute from "./routes/contactRoute.js";
-
+//Sayfa  Json
 import cookieParser from "cookie-parser";
 //JsonWebToken İçin
 import {checkUser} from "./middlewares/authMiddleware.js";
@@ -21,6 +21,7 @@ dotenv.config();
 //Veritabanı Bağlantısı için
 conn(); 
 //Sunucu İçin 
+new Darkmode().showWidget();
 const app=express();
 const port=process.env.PORT;
 //Html De JavaScript Kodu Yazmak İçin Ejs

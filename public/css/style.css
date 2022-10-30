@@ -71,7 +71,7 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  color: #32333c;
+  color: #754ef9;
   margin: 0px; }
 
 h1 {
@@ -163,7 +163,7 @@ p {
 .section-title .title {
   font-weight: 700;
   font-size: 45px;
-  color: #000;
+  color: #754ef9;
   padding-bottom: 20px; }
   @media (max-width: 767px) {
     .section-title .title {
@@ -832,7 +832,7 @@ p {
 .about-content .single-info .info-text {
   padding-left: 13px; }
   .about-content .single-info .info-text p span {
-    color: #32333c; }
+    color: #754ef9; }
 
 .about-skills .skill-item .skill-header {
   position: relative; }
