@@ -21,5 +21,10 @@ const getLogout=(req,res)=>{
    res.redirect("/");
 };
 
+//Payment Sayfası
+const getPaymentPage= async(req,res)=>{
+  res.render('payment');
+   }
+
 //Başkta Yerde Kullanmak İçin Export
- export {getIndexPage,getRegisterPage,getLoginPage,getLogout};    
+ export {getIndexPage,getRegisterPage,getLoginPage,getLogout,getPaymentPage};    
