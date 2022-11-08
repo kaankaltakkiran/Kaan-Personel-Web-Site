@@ -15,7 +15,7 @@ router.route("/login").get(pageController.getLoginPage);
 //Eğer Logout İseteği Gelirse PageControllerdaki GetLogout E git
 router.route("/logout").get(pageController.getLogout);
 //Eğer payment İseteği Gelirse getPaymentPage GetLogout E git
-router.route("/payment").get(pageController.getPaymentPage);  
+router.route("/payment").get(autMiddleware.authenticateToken,pageController.getPaymentPage);  
 
 //Routerı Export Ettim
 export default router;
