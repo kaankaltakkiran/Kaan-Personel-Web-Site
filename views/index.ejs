@@ -1,5 +1,6 @@
 <!-- Ortak Headar İmport -->
 <%- include("partials/_header")%>
+
 <!-- Loader -->
 <div class="preloader">
     <div class="loader_34">
@@ -22,6 +23,9 @@
 <!-- Ortak Menü İmport -->
     <%- include("partials/_menu")%>
     <!--====== HEADER PART ENDS ======-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/public/js/contactAlertMessage.js"></script>
+
     <div id="parallax" class="header-content d-flex align-items-center">
         <div class="header-shape shape-one layer" data-depth="0.10">
             <img src="/public/images/banner/shape/shape-1.png" alt="Shape">
@@ -419,23 +423,18 @@
                         <form id="contact-form" action="/users/contact" method="POST">
                             
                             <div class="single-form">
-                                <input type="text" name="name" placeholder="İsim">
+                                <input type="text" name="name" placeholder="İsim" id="name">
                             </div> <!-- single form -->
                             <div class="single-form">
-                                <input type="email" name="email" placeholder="Email">
+                                <input type="email" name="email" placeholder="Email" id="email">
                             </div> <!-- single form -->
                             <div class="single-form">
-                                <textarea name="message" placeholder="Mesajınız"></textarea>
+                                <textarea name="message" placeholder="Mesajınız" id="message"></textarea>
                             </div> <!-- single form -->
                             <p class="form-message"></p>
                             <div class="single-form">
-                                <button onclick="myFunction()" class="main-btn" type="submit">Mesaj Yolla</button>
-                            </div> <!-- single form -->
-                            <script>
-                                function myFunction() {
-                                  alert("!!!Mesajı Göndermekten Eminseniz Tamam Butonuna Basınız!!!");
-                                }
-                                </script>                          
+                                <button class="main-btn" type="submit" onclick=" contactAlert()">Mesaj Yolla</button>
+                            </div> <!-- single form -->                    
                         </form>
                     </div> <!-- contact form -->                
                 </div>             

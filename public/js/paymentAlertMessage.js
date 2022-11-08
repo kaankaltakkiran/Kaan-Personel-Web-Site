@@ -1,8 +1,8 @@
 function alert(){
-a=document.querySelector("#name").value =
-b=document.querySelector("#cardnumber").value =
-c=document.querySelector("#securitycode").value 
-d=document.querySelector("#expirationdate").value
+a=document.querySelector("#name").value;
+b=document.querySelector("#cardnumber").value;
+c=document.querySelector("#securitycode").value;
+d=document.querySelector("#expirationdate").value;
     if(a==''||b==''||c==''||d=='')
     {
         Swal.fire({

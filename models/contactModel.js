@@ -7,15 +7,12 @@ const {Schema}=mongoose;
 const contactUserSchema= new Schema({
 name:{
     type:String,
-    required:true,
 },
 email:{
     type:String,
-    required:true,
 },
 message:{
     type:String,
-    required:true,
 },
 },
 {
