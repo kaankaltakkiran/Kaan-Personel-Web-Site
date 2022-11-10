@@ -153,3 +153,11 @@ input[type="submit"]:active
 {
 	opacity: 0.8;
 }
+
+.alert{
+	margin: 10px 0;
+	font-size: 1em;
+	color: #45f3ff;
+	text-decoration: none;
+	left: -10PX;
+}
