@@ -1,0 +1,1 @@
+Tüm kodları elden geçirmeyi unutma(ejs deki scriptleri js yerine ekleyeceğim).
