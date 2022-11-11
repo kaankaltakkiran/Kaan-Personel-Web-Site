@@ -6,6 +6,7 @@ Kendim front-end tarafında değişikler yaptım.
 Login,Logout,Register Sayfalarını ekledim.
 Eklenen bu sayfalarını back-end ile birleştirdim.
 Mail ile iletişim ekledim.
+Ödeme Sayfası Ekledim
 Site resimleri:
 
 ![Anasayfa-1](https://user-images.githubusercontent.com/98158194/197523192-9407699d-dbe0-4bc8-aa53-e5ecc6c1210b.png)
@@ -22,6 +23,7 @@ Site resimleri:
 ![Footer-1](https://user-images.githubusercontent.com/98158194/197523366-8e713a33-9fea-4ffe-87ae-4224ffb5969d.png)
 ![ÜyeOl-1](https://user-images.githubusercontent.com/98158194/197523375-9b9e26bb-5016-4ec9-aa51-aba03440494e.png)
 ![GirişYap-1](https://user-images.githubusercontent.com/98158194/197523385-8b961415-1ffc-4410-8619-81594b85e369.png)
+![GirişYap-2](https://user-images.githubusercontent.com/98158194/201116532-1a92ca28-eba7-4acf-bb9b-eff8c462b5ff.png)
 ![UserVeriTabanı-1](https://user-images.githubusercontent.com/98158194/197810381-83597d67-6a3a-4fb7-88e0-cbc591a81233.png)
 ![Gelen Mesaj-1](https://user-images.githubusercontent.com/98158194/197810414-431457c1-a6dc-4168-9d1b-1f2326c9936e.png)
 ![ContactUser VeriTabanı-1](https://user-images.githubusercontent.com/98158194/197810433-eead6ebf-f9e5-4913-baaa-8243a7fd0c53.png)
