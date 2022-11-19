@@ -1,9 +1,10 @@
 # Kaan-Personel-Web-Site
 Kendi Kişisel Web Sitem
+Kişsel web sitesi gibi dursa da nodejs ile back-end denemeleri yaptığım site demek daha doğru olur
 Front-end kısmını Bu siteden aldım.
 https://uideck.com/
 Kendim front-end tarafında değişikler yaptım.
-Login,Logout,Register Sayfalarını ekledim.
+Login,Logout,Register,Payment Sayfalarını ekledim.
 Eklenen bu sayfalarını back-end ile birleştirdim.
 Mail ile iletişim ekledim.
 Ödeme Sayfası Ekledim
