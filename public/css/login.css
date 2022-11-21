@@ -16,7 +16,7 @@ body{
     .box{
         position: relative;
         width: 380px;
-        height: 470px;
+        height: 500px;
         background: #1c1c1c;
         border-radius: 8px;
         overflow: hidden;
@@ -129,7 +129,7 @@ body{
 }
 .links a{
 	margin: 10px 0;
-	font-size: 0.75em;
+	font-size: 1em;
 	color: #8f8f8f;
 	text-decoration: none;
 }
@@ -161,3 +161,10 @@ input[type="submit"]:active
 	text-decoration: none;
 	left: -10PX;
 }
+.showHide{
+	font-size: 1em;
+	color: #45f3ff;
+	text-decoration: none;
+	text-align: end;
+}
+
