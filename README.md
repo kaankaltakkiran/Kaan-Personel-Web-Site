@@ -32,3 +32,4 @@ Site resimleri:
 ![Payment3](https://user-images.githubusercontent.com/98158194/200348084-fb487fa8-be38-4fca-9e28-2dd9103cdf47.png)
 ![Payment4](https://user-images.githubusercontent.com/98158194/200348097-a2b20539-6000-4420-b134-ee256b42dc9c.png)
 ![Payment1](https://user-images.githubusercontent.com/98158194/200348117-0b694e04-e847-44bf-acfe-6358de096019.png)
+![404-1](https://user-images.githubusercontent.com/98158194/203955796-9990399f-1c39-442c-bfa8-bfd342cee353.png)
