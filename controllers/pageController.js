@@ -25,6 +25,10 @@ const getLogout=(req,res)=>{
 const getPaymentPage= async(req,res)=>{
   res.render('payment');
    }
+ //404page Sayfası
+const get404Page= async(req,res)=>{
+  res.render('404');
+   }
 
 //Başkta Yerde Kullanmak İçin Export
- export {getIndexPage,getRegisterPage,getLoginPage,getLogout,getPaymentPage};    
+ export {getIndexPage,getRegisterPage,getLoginPage,getLogout,getPaymentPage,get404Page};    
