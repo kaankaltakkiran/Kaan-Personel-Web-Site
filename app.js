@@ -47,6 +47,6 @@ app.use("/",userRoute);
 app.use("/users",contactRoute);
 //Port Çalıştırma
 //``
-app.listen(port,() => {
+app.listen(port||3000, () => {
     console.log(`Server Şu Portta Çalışıyor: ${port}`);
  });
