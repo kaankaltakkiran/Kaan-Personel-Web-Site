@@ -45,6 +45,12 @@ app.use("/",pageRoute);
 app.use("/",userRoute);
 //İndex.js den action /users isteği gelirse contactRoute a git
 app.use("/users",contactRoute);
+
+//404 Hatası render
+app.get('*', function(req, res){
+    res.status(404).render('404');
+  });
+
 //Port Çalıştırma
 //``
 app.listen(port||3000, () => {
